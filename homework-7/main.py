@@ -1,3 +1,4 @@
+
 number_1 = int(input("Enter number:  "))
 star_1 = "*"
 for stars in range(0, number_1):
