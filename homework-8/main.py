@@ -1,3 +1,4 @@
+
 f_number = 0
 s_number = int(input("Enter number:  "))
 

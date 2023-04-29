@@ -7,7 +7,7 @@ day = int(input("Введіть день народження: "))
 month = int(input("Введіть місяць свого народження: "))
 
 if not( 1 <= month <= 12):
-    print("Помилка. Неправильний день чи місяць.")
+    print("Помилка. Неправильний місяць.")
     exit()
 
 max_day = calendar.monthrange(2020, month)[1]
