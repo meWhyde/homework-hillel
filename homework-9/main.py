@@ -25,7 +25,7 @@ for pas in password:
 
 summ = lover + upper + number + words + symbol
 
-print(f'Pasword socer: {summ}')
+print(f'\nPasword socer: {summ} \n')
 
 if words == 0:
     print("The minimum password length is 8")
