@@ -1,10 +1,4 @@
 
-"""
-Lor3333e4m 34 23 ipsum dol23or sit amet, 234 234 34 co234nsectetur adipisci234ng eli234t,
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-"""
-
 polin = input("Enter palindrome word:  ")
 
 if polin == polin[::-1]:
