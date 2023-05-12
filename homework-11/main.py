@@ -20,7 +20,7 @@ for i in range(10):
         tmp = input(f'Enter #{i + 1} number: ')
     third_list.append(int(tmp))
 
-search_number = input("\nWhat number are you looking:  ")
+search_number = input("\nWhat number are you looking: ")
 while not search_number.lstrip("-").isdigit():
     search_number = input("What number are you looking: ")
 
