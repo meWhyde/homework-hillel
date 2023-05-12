@@ -1,4 +1,3 @@
-
 first_list = []
 
 for i in range(5):
@@ -9,13 +8,9 @@ for i in range(5):
 
 print(f'\n{first_list}\n')
 
-
-
-second_list = [1, 2, 3, 4, 5,]
+second_list = [1, 2, 3, 4, 5]
 second_list.pop()
 print(f'{second_list}\n')
-
-
 
 third_list = []
 
@@ -25,15 +20,13 @@ for i in range(10):
         tmp = input(f'Enter #{i + 1} number: ')
     third_list.append(int(tmp))
 
-search_number = input(f'\nWhat number are you looking:  ')
+search_number = input("\nWhat number are you looking:  ")
 while not search_number.lstrip("-").isdigit():
-     search_number = input(f'What number are you looking: ')
+    search_number = input("What number are you looking: ")
 
 sum_numbers = third_list.count(int(search_number))
 
 print(f'\nThis list have {sum_numbers} numbers {search_number}\n')
-
-
 
 sum_numbers = input("\nHow many numbers do you want to list:  ")
 while not sum_numbers.isdigit():
@@ -51,8 +44,6 @@ fourth_list.reverse()
 
 print(f'\n{fourth_list}\n')
 
-
-
 fifth_list = []
 fifth_big_list = []
 
@@ -67,10 +58,9 @@ for i in fifth_list:
         fifth_big_list.append(i)
 
 if len(fifth_big_list) == 0:
-    print(f'\nAll your numbers are less than 6')
+    print("\nAll your numbers are less than 6")
 else:
     print(f'\n{fifth_big_list}\n')
-
 
 sixth_list_sum = input("\nHow many numbers do you want to list:  ")
 while not sixth_list_sum.isdigit() or int(sixth_list_sum) == 0:
@@ -93,9 +83,8 @@ for i in sixth_list:
     if i < sixth_list_min:
         sixth_list_min = i
 
-print(f'\nThe minimum number in the list {sixth_list_min}, and the maximum number in list {sixth_list_max}\n')
-
-
+print(f'\nThe minimum number in the list {sixth_list_min}, '
+      f'and the maximum number in list {sixth_list_max}\n')
 
 seventh_list = []
 text_numbers = input("Enter your text:  ")
@@ -103,4 +92,5 @@ text_numbers = input("Enter your text:  ")
 for i in text_numbers:
     if i.isdigit():
         seventh_list.append(int(i))
+
 print(f'\n{len(seventh_list)} digits in your text')
