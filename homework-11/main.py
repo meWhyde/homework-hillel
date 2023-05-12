@@ -2,7 +2,7 @@ first_list = []
 
 for i in range(5):
     tmp = input(f'Enter #{i + 1} number: ')
-    while not tmp.lstrip("-").isdigit():
+    while not tmp.lstrip("-").isdigit():   # cover the case with negative numbers
         tmp = input(f'Enter #{i + 1} number: ')
     first_list.append(int(tmp))
 
