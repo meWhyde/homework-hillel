@@ -37,4 +37,3 @@ if number == 0:
     print("Use digits in password!")
 if symbol == 0:
     print("Use special characters in password!")
-

@@ -10,10 +10,3 @@ elif n == 0 and 6 <= number <= 20:
     print("Weird")
 elif n == 1:
     print("Weird")
-
-
-
-
-
-
-

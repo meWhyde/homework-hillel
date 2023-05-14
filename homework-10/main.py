@@ -6,26 +6,23 @@ if polin == polin[::-1]:
 else:
     print("-")
 
-
-
 text_all = input("Enter your text:  ")
 search = input("Enter a search word:  ")
 answer = "NO"
 clean = ""
 
-for i in text_all:
-    if i.isalnum() or i.isspace():
-        clean += i
+# for i in text_all:
+#     if i.isalnum() or i.isspace():
+#         clean += i
+#
+# clean = clean.split()
+#
+# for i in clean:
+#     if i.lower() == search.lower():
+#         answer = "YES"
 
-clean = clean.split()
-
-for i in clean:
-    if i.lower() == search.lower():
-        answer = "YES"
 
 print(answer)
-
-
 
 text_rap = input("Enter your text:  ")
 
@@ -35,8 +32,6 @@ else:
     text_rap += "qqq"
 
 print(text_rap)
-
-
 
 text_num = input("Enter your text:  ")
 text_with = ""
@@ -51,8 +46,6 @@ for i in text_with:
     text_fin += i + " "
 
 print(text_fin)
-
-
 
 mail = input("Enter your email:  ")
 
