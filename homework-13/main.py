@@ -1,26 +1,32 @@
 
-files_sum = int(input("How many files do you want to check:  "))
-files = {}
+num_files = input("How many files do you want to check:  ")
+while not num_files.isdigit():
+    num_files = input("How many files do you want to check:  ")
 
-for i in range(files_sum):
-    print(f'Enter name file #{i + 1}:  ')
-    file_name = input("Enter file name:  ")
+files_library = {}
+check_library = {
+    "read": "R",
+    "write": "W",
+    "execute": "X",
+}
+
+for i in range(int(num_files)):
+    file_name = input(f'Enter name file #{i + 1}:  ')
     name = file_name.strip(" XWR")
-    files["read " + name] = "Access denied"
-    files["write " + name] = "Access denied"
-    files["execute " + name] = "Access denied"
-    if file_name.find(" X") != -1:
-        files["execute " + name] = "OK"
-    if file_name.find(" W") != -1:
-        files["write " + name] = "OK"
-    if file_name.find(" R") != -1:
-        files["read " + name] = "OK"
+    files_library[name] = tuple(file_name.strip(name).split())
 
-check_sum = int(input("How many file checks:  "))
-final_answer = ""
+files_checks = input("How many checks do you want to run:  ")
+while not files_checks.isdigit():
+    files_checks = input("How many checks do you want to run:  ")
 
-for i in range(check_sum):
-    checking = files[input(f'Write the name of the file #{i + 1} to check:  ')]
-    final_answer += checking + "\n"
+check_result = ""
 
-print(final_answer)
+for i in range(int(files_checks)):
+    print(f"Checking #{i + 1}")
+    check_name = input("Enter operation name and file name:  ").split()
+    if check_library[check_name[0]] in files_library[check_name[1]]:
+        check_result += "OK \n"
+    else:
+        check_result += "Access denied \n"
+
+print(check_result)
