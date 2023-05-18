@@ -1,12 +1,12 @@
 
-juni_debtors = {
+june_debtors = {
     "Oliver", "Jack", "Noah",
     "Liam", "Mason", "James",
     "Benjamin", "Emma", "Ava",
     "Isabella", "Emily", "Mia",
     "Ethan", "Abigail",
 }
-juli_debtors = {
+july_debtors = {
     "Oliver", "Jack", "Noah",
     "James", "Benjamin", "Jacob",
     "Michael", "Elijah", "Ethan",
@@ -15,8 +15,8 @@ juli_debtors = {
     "Harper",
 }
 
-print(f'\nDues for june and july: \n{juni_debtors.intersection(juli_debtors)}')
-print(f'\nDues for july: \n{juli_debtors.difference(juni_debtors)}')
+print(f'\nJune and July debtors: \n{june_debtors.intersection(july_debtors)}')
+print(f'\nJuly debtors: \n{july_debtors.difference(june_debtors)}')
 
 camel_list = ["FirstItem", "FriendsList", "MyTuple"]
 snake_list = []
