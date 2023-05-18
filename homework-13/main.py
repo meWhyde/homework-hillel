@@ -24,6 +24,9 @@ check_result = ""
 for i in range(int(files_checks)):
     print(f"Checking #{i + 1}")
     check_name = input("Enter operation name and file name:  ").split()
+    while check_library.get(check_name[0]) is None \
+            or files_library.get(check_name[1]) is None:
+        check_name = input("Enter correct operation or file name:  ").split()
     if check_library[check_name[0]] in files_library[check_name[1]]:
         check_result += "OK \n"
     else:
