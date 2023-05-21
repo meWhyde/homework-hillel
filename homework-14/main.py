@@ -21,9 +21,9 @@ print(f'\nJuly debtors: \n{july_debtors.difference(june_debtors)}')
 camel_list = ["FirstItem", "FriendsList", "MyTuple"]
 snake_list = []
 
-for i in range(len(camel_list)):
+for i in camel_list:
     snake_case = ""
-    for word in camel_list[i]:
+    for word in i:
         if word.isupper():
             snake_case += "_"
         snake_case += word.lower()
