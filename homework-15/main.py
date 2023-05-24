@@ -1,4 +1,3 @@
-
 import random
 import collections
 
@@ -52,8 +51,7 @@ with open("random_numbers.txt", "w") as r:
 
 with open("words_count.txt", "r") as c:
     text_c = c.read()
-
-words_count = text_c.split()
+    words_count = text_c.split()
 
 print(f'\nFile "words_count.text" has {len(words_count)} words')
 
@@ -77,7 +75,7 @@ text_t = text_t.split()
 text_without_space = "".join(text_t)
 top_letters = collections.Counter(text_without_space).most_common(5)
 
-print(f'\nTop 5 letters in the text in file "top_words.txt": '
-      f'\n#1 - {top_letters[0]} \n#2 - {top_letters[1]} '
-      f'\n#3 - {top_letters[2]} \n#4 - {top_letters[3]} '
-      f'\n#5 - {top_letters[4]}')
+print('\nTop 5 letters in the text in file "top_words.txt:"\n')
+
+for i in range(5):
+    print(f'#{i + 1} - {top_letters[i]}')
