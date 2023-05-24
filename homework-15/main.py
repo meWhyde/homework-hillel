@@ -50,8 +50,8 @@ with open("random_numbers.txt", "w") as r:
 # Task 5
 
 with open("words_count.txt", "r") as c:
-    text_c = c.read()
-    words_count = text_c.split()
+    text_file = c.read()
+    words_count = text_file.split()
 
 print(f'\nFile "words_count.text" has {len(words_count)} words')
 
