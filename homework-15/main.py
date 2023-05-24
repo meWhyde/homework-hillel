@@ -29,7 +29,7 @@ numbers_count = input("\nHow many numbers do you want to write?   ")
 while not numbers_count.isdigit():
     numbers_count = input("How many numbers do you want to write?   ")
 
-for i in range(int(numbers_count)):
+for _number in range(int(numbers_count)):
     user_number = input("Enter your number:  ")
     while not user_number.isdigit():
         user_number = input("Enter your number:  ")
@@ -42,7 +42,7 @@ with open("numbers.txt", "w") as n:
 
 random_numbers = []
 
-for i in range(100):
+for _number in range(100):
     random_numbers.append(str(random.randint(1, 1000)))
 
 with open("random_numbers.txt", "w") as r:
@@ -65,7 +65,8 @@ numbers_s_sum = 0
 for i in text_s:
     numbers_s_sum += int(i)
 
-print(f'\nThe sum of the numbers in the file "sum_of_numbers.txt" is {numbers_s_sum}')
+print(f'\nThe sum of the numbers in the file '
+      f'"sum_of_numbers.txt" is {numbers_s_sum}')
 
 # Task 7
 
@@ -76,4 +77,7 @@ text_t = text_t.split()
 text_without_space = "".join(text_t)
 top_letters = collections.Counter(text_without_space).most_common(5)
 
-print(f'\nTop 5 letters in the text in file "top_words.txt": \n#1 - {top_letters[0]} \n#2 - {top_letters[1]} \n#3 - {top_letters[2]} \n#4 - {top_letters[3]} \n#5 - {top_letters[4]}')
+print(f'\nTop 5 letters in the text in file "top_words.txt": '
+      f'\n#1 - {top_letters[0]} \n#2 - {top_letters[1]} '
+      f'\n#3 - {top_letters[2]} \n#4 - {top_letters[3]} '
+      f'\n#5 - {top_letters[4]}')
