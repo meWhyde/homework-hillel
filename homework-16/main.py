@@ -37,7 +37,5 @@ for i in a.keys():
 
 c = a | b
 
-print(c)
-
 with open("contacts.json", "w") as j:
     json.dump(c, j)
