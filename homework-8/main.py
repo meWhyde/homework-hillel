@@ -16,3 +16,4 @@ while fromm <= to:
         summ += fromm
     fromm += 1
 print(f'"Sum of numbers divisible by 3 =  "{summ}')
+
